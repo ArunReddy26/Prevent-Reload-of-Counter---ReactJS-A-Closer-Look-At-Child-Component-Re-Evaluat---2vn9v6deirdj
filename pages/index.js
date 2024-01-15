@@ -6,7 +6,7 @@ export default function Home() {
     const [dummyState, setDummyState] = useState(0); // New state for testing
 
     const incrementCount = useCallback(() => {
-        setCount(prevCount => prevCount + 1);
+setCount((prevCount) => prevCount + 1);
     }, []);
   //    const increment = useCallback(() => {
   //   console.log('Incrementing count...');
