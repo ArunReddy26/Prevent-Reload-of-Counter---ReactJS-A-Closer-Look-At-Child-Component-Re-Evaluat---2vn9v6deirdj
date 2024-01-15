@@ -3,7 +3,7 @@ import CounterButton from '../components/CounterButton';
 
 export default function Home() {
     const [count, setCount] = useState(0);
-    // const [dummyState, setDummyState] = useState(0); // New state for testing
+    const [dummyState, setDummyState] = useState(0); // New state for testing
 
     // const incrementCount = useCallback(() => {
     //     setCount(prevCount => prevCount + 1);
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
             <h1>Count: {count}</h1>
             <CounterButton onIncrement={increment}/><br></br>
-            // <button onClick={() => setDummyState(prev => prev + 1)}>Change Dummy State</button>
+            <button onClick={() => setDummyState(prev => prev + 1)}>Change Dummy State</button>
         </div>
     );
 }
