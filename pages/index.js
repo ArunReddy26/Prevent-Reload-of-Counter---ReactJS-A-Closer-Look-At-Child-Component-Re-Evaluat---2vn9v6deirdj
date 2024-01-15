@@ -16,7 +16,7 @@ setCount((prevCount) => prevCount + 1);
     return (
         <div>
             <h1>Count: {count}</h1>
-            <CounterButton onIncrement={incrementCount}/><br></br>
+            <CounterButton onIncrement={incrementCount}/>
             <button onClick={() => setDummyState(prev => prev + 1)}>Change Dummy State</button>
         </div>
     );
